@@ -2,7 +2,11 @@
 
 This is the supporting material for my talk "Data Engineering on GCP" presented at Oxford University as part of the course [Artificial Inteligence: Cloud and Edge Implementations](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).
 
-## Before Getting Started
+## Presentation Slides
+
+Available [here](https://docs.google.com/presentation/d/e/2PACX-1vRitdzbQmzKWs0wyneOqN9jfdOwDpWGaVwZJLKAPyKEGmIao3_P0KSwr7uRz6FMvSbuAKnkJoHxzvIa/pub?start=false&loop=false&delayms=3000).
+
+## Getting Started
 
 This repo has been tested on Linux Ubuntu. If you are using Windows 10 you may use Ubuntu through the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
@@ -37,4 +41,3 @@ pip install -r requirements.txt
 ```
 
 To deactivate the environment, after finishing your work, use the command `deactivate`.
-
