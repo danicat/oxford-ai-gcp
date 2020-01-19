@@ -1,5 +1,12 @@
 # oxford-ai-gcp
-This is the supporting material for my talk "Data Engineering on GCP" presented at Oxford University as part of the course "Artificial Inteligence: Cloud and Edge Implementations": https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations
+
+This is the supporting material for my talk "Data Engineering on GCP" presented at Oxford University as part of the course [Artificial Inteligence: Cloud and Edge Implementations](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).
+
+## Before Getting Started
+
+This repo has been tested on Linux Ubuntu. If you are using Windows 10 you may use Ubuntu through the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+The following steps assume you have [python3](https://www.python.org/downloads/) installed.
 
 ## Setup
 
