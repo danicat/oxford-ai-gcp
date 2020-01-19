@@ -4,6 +4,5 @@ with open("hamlet.txt","r") as f:
     for word in f.read().split(): 
         if word not in wordcount: 
             wordcount[word] = 0
-        wordcount[word] += 1 
-    for k,v in wordcount.items(): 
-        print(f"word: {k}, count: {v}")
+        wordcount[word] += 1
+    print([(word, count) for word, count in wordcount.items()])
