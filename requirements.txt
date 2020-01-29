@@ -2,3 +2,4 @@ nltk==3.4.5
 py4j==0.10.7
 pyspark==2.4.4
 six==1.14.0
+apache-beam[gcp]
