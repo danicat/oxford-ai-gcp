@@ -8,11 +8,19 @@ Available [here](https://docs.google.com/presentation/d/e/2PACX-1vRitdzbQmzKWs0w
 
 ## Getting Started
 
-This repo has been tested on Linux Ubuntu. If you are using Windows 10 you may use Ubuntu through the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+This repo has been tested on Linux Ubuntu.
+
+If you are using Windows 10 you may use Ubuntu through the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 The following steps assume you have [python3](https://www.python.org/downloads/) installed.
 
 ## Setup
+
+Install Java 8 (required for PySpark):
+
+```sh
+sudo apt install openjdk-8-jdk
+```
 
 Create a python3 virtual env before running any of the sample code:
 

@@ -1,0 +1,23 @@
+{
+    "name": "ubuntu-micro",
+    "machineType": "zones/us-west1-a/machineTypes/f1-micro",
+    "networkInterfaces": [
+        {
+            "accessConfigs": [
+                {
+                    "type": "ONE_TO_ONE_NAT",
+                    "name": "External NAT"
+                }
+            ],
+            "network": "global/networks/default"
+        }
+    ],
+    "disks": [
+        {
+            "boot":"true",
+            "initializeParams": {
+                "sourceImage": "projects/ubuntu-os-cloud/global/images/family/ubuntu-minimal-1804-lts"
+            }
+        }
+    ]
+}
