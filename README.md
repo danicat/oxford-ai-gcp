@@ -8,7 +8,7 @@ Available [here](https://docs.google.com/presentation/d/e/2PACX-1vRitdzbQmzKWs0w
 
 ## Getting Started
 
-This repo has been tested on Linux Ubuntu.
+This repo has been tested on Linux Ubuntu and Mac OS X.
 
 If you are using Windows 10 you may use Ubuntu through the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
@@ -32,7 +32,7 @@ If the module `python3-venv` is not available, you may need to install it.
 
 On Ubuntu:
 
-```
+```sh
 sudo apt-get install python3-venv
 ```
 
