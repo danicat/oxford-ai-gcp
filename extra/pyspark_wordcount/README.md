@@ -15,7 +15,7 @@ gcloud dataproc clusters create --region us-west1 $CLUSTER_NAME
 Then submit the job:
 
 ```sh
-gcloud dataproc jobs pyspark submit --region us-west1 $CLUSTER_NAME wordcount.py
+gcloud dataproc jobs submit pyspark --region us-west1 --cluster $CLUSTER_NAME wordcount.py
 ```
 
 Remember to delete the cluster afterwards!
