@@ -1,0 +1,1 @@
+create table recommendations(user_id text, doc_id text, rating float);
