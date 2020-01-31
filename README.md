@@ -53,3 +53,4 @@ To deactivate the environment, after finishing your work, use the command `deact
 ## References
 
 1. [Why performance matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
+1. [Spark BigQuery connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)

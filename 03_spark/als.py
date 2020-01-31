@@ -20,8 +20,6 @@ df = spark.read \
     .option("table", "danicat.oxford.pageviews") \
     .load()
 
-# dfPageview = df.rdd.map(lambda row: (row[0], row[1], 1)).toDF(["user_id", "doc_id", "rating"])
-
 df.createOrReplaceTempView("pageviews")
 
 df_pageviews = spark.sql("select distinct user_id, doc_id, 1 as rating from pageviews")
