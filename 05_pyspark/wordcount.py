@@ -4,9 +4,9 @@ from pyspark.sql import SparkSession
 sc = pyspark.SparkContext()
 spark = SparkSession(sc)
 
-text = sc.textFile("hamlet.txt")
+# text = sc.textFile("hamlet.txt")
 # use the line below when running on Dataproc
-# text = sc.textFile("gs://apache-beam-samples/shakespeare/hamlet.txt")
+text = sc.textFile("gs://apache-beam-samples/shakespeare/hamlet.txt")
 words = text.flatMap(lambda line: line.split())
 ones = words.map(lambda word: (word, 1))
 counts = ones.reduceByKey(lambda x, y : x + y)

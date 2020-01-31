@@ -15,7 +15,7 @@ if __name__ == "__main__":
                 wordcount[word] += 1
 
         # sort by count descending and takes top 5 elements
-        top_words = sorted(wordcount.items(), key=lambda x: x[1], reverse=True)[:5]
+        top_words = sorted(wordcount.items(), key=lambda x: x[1], reverse=True)[:10]
 
         for word, count in top_words:
             print(f"word: {word}, count: {count}")
