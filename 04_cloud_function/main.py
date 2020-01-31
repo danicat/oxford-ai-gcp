@@ -42,7 +42,7 @@ def recommend(request):
             user_id = request_json['user_id']
 
             stmt = sqlalchemy.text(
-                "SELECT doc_id FROM RECOMMENDATIONS WHERE user_id=:user_id"
+                "SELECT doc_id FROM RECOMMENDATIONS WHERE user_id=:user_id AND prediction > 0.8 ORDER BY prediction DESC"
             )
 
             result = conn.execute(stmt, user_id=user_id).fetchall()
