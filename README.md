@@ -49,3 +49,7 @@ pip install -r requirements.txt
 ```
 
 To deactivate the environment, after finishing your work, use the command `deactivate`.
+
+## References
+
+1. [Why performance matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)

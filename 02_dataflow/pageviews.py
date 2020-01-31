@@ -1,10 +1,11 @@
+#!/usr/bin/env python
 from __future__ import absolute_import
 import argparse
-
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions
 from apache_beam.options.pipeline_options import StandardOptions
+import json
 
 def run(argv=None):
     parser = argparse.ArgumentParser()
@@ -14,7 +15,7 @@ def run(argv=None):
         help='Pub/Sub topic to read from',
         required=True)
     parser.add_argument(
-        '--output',
+        '--table',
         type=str,
         help='BigQuery table name',
         required=True)
@@ -25,10 +26,10 @@ def run(argv=None):
 
     p = beam.Pipeline(options=options)
     (p | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(topic=args.topic)
-       | 'Convert to JSON' >> beam.Map(lambda message: {"message": message})
+       | 'Convert to JSON' >> beam.Map(lambda message: json.loads(message))
        | 'Write to BigQuery' >> beam.io.WriteToBigQuery(
-            args.output,
-            schema='message:STRING',
+            args.table,
+            schema='user_id:STRING,doc_id:STRING',
             create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
             write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND))
     

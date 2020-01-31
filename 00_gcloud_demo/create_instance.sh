@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PROJECT=$(gcloud config get-value project)
 TOKEN=$(gcloud auth print-access-token)
 curl -H "Authorization: Bearer $TOKEN" \
