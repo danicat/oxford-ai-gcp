@@ -4,7 +4,7 @@ This is the supporting material for my talk "Data Engineering on GCP" presented 
 
 ## Presentation Slides
 
-Available [here](https://docs.google.com/presentation/d/e/2PACX-1vRitdzbQmzKWs0wyneOqN9jfdOwDpWGaVwZJLKAPyKEGmIao3_P0KSwr7uRz6FMvSbuAKnkJoHxzvIa/pub?start=false&loop=false&delayms=3000).
+Available [here](https://docs.google.com/presentation/d/e/2PACX-1vRSAZF5AC0PBygUwV2o6op79VizoSJy3xKVuG03iG_IzDoQx631kFzL2T4eN8kYGy9nU8U8VeeD4icc/pub?start=false&loop=false&delayms=3000).
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ The following steps assume you have [python3](https://www.python.org/downloads/)
 
 ## Setup
 
-Install Java 8 (required for PySpark):
+Install Java 8 (required for running PySpark locally). On Linux:
 
 ```sh
 sudo apt install openjdk-8-jdk
