@@ -16,7 +16,9 @@ The following steps assume you have [python3](https://www.python.org/downloads/)
 
 ## Setup
 
-Install Java 8 (required for running PySpark locally). On Linux:
+### Linux (Ubuntu)
+
+Install Java 8 (required for running PySpark locally). On Linux Ubuntu:
 
 ```sh
 sudo apt install openjdk-8-jdk
@@ -28,15 +30,19 @@ Create a python3 virtual env before running any of the sample code:
 python3 -m venv venv
 ```
 
-If the module `python3-venv` is not available, you may need to install it.
-
-On Ubuntu:
+If the module `python3-venv` is not available, you may need to install it:
 
 ```sh
 sudo apt-get install python3-venv
 ```
 
-To active the environment, use:
+### Mac OS X
+
+TBD
+
+## Running the Examples
+
+To activate the environment, use:
 
 ```sh
 source venv/bin/activate
