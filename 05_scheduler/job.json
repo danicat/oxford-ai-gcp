@@ -1,0 +1,23 @@
+{
+    "job": {
+        "reference": {
+            "projectId": "danicat"
+        },
+        "placement": {
+            "clusterName": "ml-cluster",
+            "clusterUuid": "ceb97b88-6ae4-435e-a595-5051bc25de52"
+        },
+        "pysparkJob": {
+            "mainPythonFileUri": "gs://danicat/als.py",
+            "args": [
+                "34.82.97.175",
+                "rec-db",
+                "rec-db",
+                "rec-db"
+            ],
+            "jarFileUris": [
+                "gs://spark-lib/bigquery/spark-bigquery-latest.jar"
+            ]
+        }
+    }
+}
