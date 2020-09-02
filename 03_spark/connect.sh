@@ -1,0 +1,1 @@
+gcloud sql connect recsys-db --database rec-db --user rec-db

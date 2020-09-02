@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a CloudSQL instance to be the recommendation database
-gcloud sql instances create recsys-db --database-version MYSQL_5_7 --tier db-f1-micro --async --region us-west1
+gcloud sql instances create recsys-db --database-version MYSQL_5_7 --tier db-f1-micro --region us-west1
 
 # Create recommendation database
 gcloud sql databases create rec-db --instance recsys-db

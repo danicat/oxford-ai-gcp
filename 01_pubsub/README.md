@@ -34,4 +34,4 @@ After you are done with the PubSub topic and subscription you can clean your env
 ./teardown.sh
 ```
 
-Please note that this topic will be used in the examples for the next sessions so you should only run `teardown.sh` after you.
+Please note that this topic will be used in the examples for the next sessions so you should only run `teardown.sh` after you are done with all examples.

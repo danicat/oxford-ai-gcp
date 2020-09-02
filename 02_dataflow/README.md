@@ -1,9 +1,11 @@
 # Pub/Sub and Dataflow Streaming
 
-First create a topic on Pub/Sub, then start the streaming job:
+## Setup
 
-```sh
-python pubsubtotext.py --topic topic-name --output local-filename
-```
+First create a topic on Pub/Sub as explained in the previous session, then run the setup script to create a BigQuery dataset at the current project. Please beware that at the time of this writing, the `bq` command required python 2.
 
-This must be run using DirectRunner as Dataflow can't write a local file!
+## Running the example
+
+After creating the dataset, run one of the following scripts to start the streaming job: `rundataflow.sh` or `runlocal.sh`.
+
+Please not that `runlocal.sh` will use the DirectRunner, so it will run from your machine, while `rundataflow.sh` will trigger a dataflow job on GCP, so it will not be running locally.

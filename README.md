@@ -16,6 +16,10 @@ The following steps assume you have [python3](https://www.python.org/downloads/)
 
 ## Setup
 
+### Google Cloud SDK
+
+Follow the instructions at https://cloud.google.com/sdk/docs/downloads-interactive.
+
 ### Linux (Ubuntu)
 
 Install Java 8 (required for running PySpark locally). On Linux Ubuntu:
@@ -58,5 +62,6 @@ To deactivate the environment, after finishing your work, use the command `deact
 
 ## References
 
+1. [Mining of Massive Datasets](http://www.mmds.org/)
 1. [Why performance matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
 1. [Spark BigQuery connector](https://github.com/GoogleCloudDataproc/spark-bigquery-connector)
