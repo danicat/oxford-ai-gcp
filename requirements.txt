@@ -31,7 +31,7 @@ grpc-google-iam-v1==0.12.3
 grpcio==1.31.0
 grpcio-gcp==0.2.2
 hdfs==2.5.8
-httplib2==0.17.4
+httplib2==0.18.0
 idna==2.10
 isort==4.3.21
 lazy-object-proxy==1.4.3
