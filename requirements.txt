@@ -38,7 +38,7 @@ lazy-object-proxy==1.4.3
 mccabe==0.6.1
 mock==2.0.0
 monotonic==1.5
-numpy==1.19.1
+numpy==1.22.0
 oauth2client==3.0.0
 pbr==5.5.0
 protobuf==3.13.0
